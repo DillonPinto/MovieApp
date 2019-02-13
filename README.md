@@ -4,7 +4,7 @@ This project is a movie database application. The application allows users to se
 This project was generated with [Angular CLI] version 7.2.3.
 
 
-# Functionality implemented: 
+## Functionality implemented: 
   
   * Login, register, and save user sessions without requiring the user to log back in again
   * Ability to search for movies by title or IMDB id with autocomplete
@@ -14,6 +14,24 @@ This project was generated with [Angular CLI] version 7.2.3.
   * Pagination for all results displayed
   * Poster not available image displayed if a poster isn't available to display on a movie card
   * Ability to add a movie to list or remove one from a list
+
+
+## Screenshots
+
+![alt text](screenshots/screen1.png "Description goes here")
+
+
+![alt text](screenshots/screen2.png "Description goes here")
+
+
+![alt text](screenshots/screen3.png "Description goes here")
+
+
+![alt text](screenshots/screen4.png "Description goes here")
+
+![alt text](screenshots/screen5.png "Description goes here")
+
+![alt text](screenshots/screen6.png "Description goes here")
 
 
 ## Future improvements
