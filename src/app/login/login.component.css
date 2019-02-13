@@ -1,0 +1,26 @@
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+mat-form-field {
+
+    margin-left: 5%;
+    margin-top: 4px;
+    width: 95%;
+    flex:1;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    flex: 0.5;
+    width: 10%;
+}

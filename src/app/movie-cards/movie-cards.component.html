@@ -1,0 +1,76 @@
+<mat-card *ngFor="let movie of movieArray;">
+
+  <div id="card-inner">
+
+
+    <div id="poster" ng-model="posterExists" ng-inti="posterExists = true">
+
+      <!-- Displays a placeholder image if a poster couldn't be found -->
+      <img mat-card-image src="{{(movie.Poster === 'N/A')? this.POSTER_DOES_NOT_EXIST: movie.Poster }}">
+
+    </div>
+
+    <div id="right-half">
+      <div id="content">
+        <mat-card-content>
+
+          <h3> {{ movie.Title}} ({{ movie.Year}})</h3>
+
+        </mat-card-content>
+      </div>
+      <div id="buttons">
+
+        <mat-card-actions>
+
+
+          <mat-menu #addMenu='matMenu'>
+
+            <button mat-menu-item (click)="newListDialog(movie.Title, movie.Poster, movie.imdbID, movie.Year, list)" >
+              Create new list
+              <i id="newFolder" class="material-icons">create_new_folder</i>
+
+            </button>
+
+            <button mat-menu-item *ngFor="let list of currentUser.movieLists"
+                    (click)="addToUser(movie.Title, movie.Poster, movie.imdbID, movie.Year,list)">
+              {{list.listName}}
+            </button>
+
+          </mat-menu>
+
+
+          <button *ngIf="searchMode" mat-button [mat-menu-trigger-for]="addMenu" >
+            <!-- TODO IF ALREADY IN A LIST. THEN USE THE X Icon. -->
+            Add
+            <i class="material-icons md-18" >add</i>
+          </button>
+
+
+          <button *ngIf="!searchMode" (click)="removeFromUser(movie.imdbID, currentList)" mat-button >
+            Remove
+            <i class="material-icons md-18" >clear</i>
+          </button>
+
+
+
+
+
+          <button mat-button (click)="openImdbPageInNewWindow(movie.imdbID)">
+            Watch trailer on IMDB
+            <i class="material-icons md-18">ondemand_video</i>
+
+          </button>
+          <!-- TODO FIX CLICK FUNCTION-->
+          <button mat-button (click)="deleteMe(i)">
+            Full info
+            <i class="material-icons md-18">info</i>
+
+          </button>
+
+        </mat-card-actions>
+
+      </div>
+    </div>
+  </div>
+</mat-card>
+

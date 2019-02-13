@@ -1,0 +1,22 @@
+<form id="registerForm">
+
+  <mat-form-field>
+
+    <input type="text" matInput placeholder="Username" #usernameBox>
+
+  </mat-form-field>
+
+
+  <mat-form-field>
+
+    <input type="text" matInput placeholder="password" #passwordBox>
+
+  </mat-form-field>
+
+  <div>
+    <span class="spacer"></span>
+    <button mat-raised-button (click)="submit(usernameBox.value, passwordBox.value)">
+      Register
+    </button>
+  </div>
+</form>

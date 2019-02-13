@@ -1,0 +1,56 @@
+<div id="container">
+  <mat-toolbar>
+
+    <span>Movies to watch</span>
+    <span class="spacer"></span>
+
+    <mat-menu #appMenu="matMenu">
+
+      <button (click)="logout()" mat-menu-item>Logout</button>
+    </mat-menu>
+
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+
+  <mat-tab-group id="searchTab">
+    <mat-tab label="Explore">
+
+      <app-movie-search [currentUser]="this.user"></app-movie-search>
+
+    </mat-tab>
+
+    <mat-tab label="Your lists">
+
+
+
+      <mat-expansion-panel *ngFor="let list of this.user.movieLists">
+
+        <mat-expansion-panel-header>
+
+          <mat-panel-title>{{ list.listName }}</mat-panel-title>
+          <mat-panel-description>Number of movies: {{list.numOfMovies}}</mat-panel-description>
+
+
+
+        </mat-expansion-panel-header>
+
+        <app-movie-cards [movieArray]='list.movieArray' [currentList]="list" [searchMode]='false'></app-movie-cards>
+
+
+      </mat-expansion-panel>
+
+    </mat-tab>
+
+
+  </mat-tab-group>
+
+
+
+</div>
+
+
+

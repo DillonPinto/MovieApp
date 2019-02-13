@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>New list</h1>
+<div id="modal" mat-dialog-content>
+  <p>Name your list!</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.dialogListName">
+  </mat-form-field>
+</div>
+<mat-checkbox [(ngModel)]="data.addMovieToNewList">Add {{data.movieTitle}}?</mat-checkbox>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onOk()" cdkFocusInitial>Create</button>
+</div>

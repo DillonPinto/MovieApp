@@ -1,0 +1,22 @@
+<form id="loginForm">
+
+    <mat-form-field>
+
+        <input type="text" matInput placeholder="Username" #usernameBox>
+
+    </mat-form-field>
+
+
+    <mat-form-field>
+
+        <input type="text" matInput placeholder="password" #passwordBox>
+
+    </mat-form-field>
+
+    <div>
+        <span class="spacer"></span>
+    <button mat-raised-button (click)="login(usernameBox.value, passwordBox.value)">
+        Login
+    </button>
+    </div>
+</form>

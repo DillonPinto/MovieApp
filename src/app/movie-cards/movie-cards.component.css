@@ -1,0 +1,37 @@
+#card-inner{
+
+    display: flex;
+
+}
+
+#poster {
+    width: 30%;
+    float: left;
+
+}
+
+#right-half{
+    margin-left: 10%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    word-wrap: break-word;
+    float: right;
+    width: 70%;
+    flex: 3;
+
+}
+
+#buttons {
+    flex: 1;
+}
+
+
+#newFolder {
+
+    position: relative;
+    top: 5px;
+}

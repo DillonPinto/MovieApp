@@ -1,0 +1,46 @@
+<form id="searchForm">
+
+  <mat-form-field hintLabel="Enter at least 3 characters for suggested titles in a search by title">
+
+    <input type="text" matInput
+           [matAutocomplete]="auto" placeholder="Search"
+           #searchBox (keyup)="handleEvent($event,searchBox.value)" (cut)="this.options=[]">
+
+    <button matSuffix mat-icon-button (click)="handleEnter(searchBox.value)">
+      <mat-icon material-icons md-36>search</mat-icon>
+    </button>
+
+  </mat-form-field>
+
+
+  <mat-autocomplete #auto="matAutocomplete">
+
+    <mat-option *ngFor="let option of options" [value]="option.Title">{{option.Title}}</mat-option>
+
+  </mat-autocomplete>
+
+
+  <div id="select">
+
+    <mat-form-field>
+      <mat-select id="select1" placeholder="Search by" [(value)]="selected">
+
+        <mat-option value='Title'>Title</mat-option>
+        <mat-option value='ID'>ID</mat-option>
+
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+</form>
+
+<!-- Insert MovieCards component and bind to MovieSearch.movieArray -->
+<app-movie-cards *ngIf="this.searchResults.Response" [movieArray]='movieArray' [searchMode]='true'></app-movie-cards>
+
+<mat-paginator *ngIf="movieArray" [length]="searchResults.totalResults" [showFirstLastButtons]="true"
+               [pageSize]="10"
+               (page)="handlePage($event)">
+</mat-paginator>
+
+
+

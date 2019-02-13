@@ -1,0 +1,28 @@
+#searchForm {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+mat-form-field {
+
+    margin-left: 5%;
+    margin-top: 4px;
+    width: 95%;
+    flex:1;
+}
+
+#select {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 4%;
+    width: 30%;
+
+}
+
+
