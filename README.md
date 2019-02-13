@@ -1,5 +1,6 @@
 # MovieApp
-This project implements a movie database application. The application allows users to search for movies and add them to their own custom lists for reference 
+This project is a movie database application. The application allows users to search for movies and add them to their own custom lists for reference.
+
 This project was generated with [Angular CLI] version 7.2.3.
 
 
