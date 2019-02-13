@@ -6,12 +6,13 @@ This project was generated with [Angular CLI] version 7.2.3.
 
 # Functionality implemented: 
   
-  * Login, register, and save user sessions without requiring the user to log back in again.
+  * Login, register, and save user sessions without requiring the user to log back in again
   * Ability to search for movies by title or IMDB id with autocomplete
   * Entity framework used to store user records/objects. 
   * All UI components implemented using the Angular material package
   * Ability to create lists
-  * Pagination for all results displaye
+  * Pagination for all results displayed
+  * Poster not available image displayed if a poster isn't available to display on a movie card
   * Ability to add a movie to list or remove one from a list
 
 
