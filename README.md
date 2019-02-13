@@ -4,10 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Functionality implemented
   Login, register and save user sessions without requiring the user to log in again.
+  
   Entity framework used to store user records/objects.
+  
   All UI components implemented using the Angular material package
+  
   Ability to create lists
+  
   Ability to add a movie to list or remove movie from list
+  
   Pagination for all results displayed
 
 
