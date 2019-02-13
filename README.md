@@ -1,37 +1,40 @@
 # MovieApp
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+This project implements a movie database application. The application allows users to search for movies and add them to their own custom lists for reference 
+This project was generated with [Angular CLI] version 7.2.3.
 
 
 # Functionality implemented
-  Login, register and save user sessions without requiring the user to log in again.
+*Login, register, and save user sessions without requiring the user to log back in again.
+
+*Ability to search for movies by title or IMDB id with autocomplete
+
+*Entity framework used to store user records/objects.
+
+*All UI components implemented using the Angular material package
   
-  Entity framework used to store user records/objects.
+*Ability to create lists
   
-  All UI components implemented using the Angular material package
-  
-  Ability to create lists
-  
-  Ability to add a movie to list or remove movie from list
-  
-  Pagination for all results displayed
+*Ability to add a movie to list or remove one from a list
+
+*Pagination for all results displayed
+
 
 
 ## Future improvements
 Use the Angular material CDK virtual-scroll-viewport instead of the paginator for an efficient infinite scroll that only
 renders the list items that are in view, allowing memory usage to be kept low.
 
+Add a rating system and a modal box for full movie info
+
 Grid layout for a more efficient use of space.
 
 Search engine optimization using Google Search Console (Web master tools) to index the site on Google and similar tools
 for other major search engines.
 
-Include common error codes (404, etc)
+Include more common error codes, including a 404 page.
 
 Implement a more efficient data structure for storing and retrieving movies (hashmap/set)
 
 Add delete account functionality
 
-Improved methods of validation of passwords
-"# MovieApp" 
-# MovieApp
-# MovieApp
+Implment better validation of login credentials
