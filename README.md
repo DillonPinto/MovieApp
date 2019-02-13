@@ -18,20 +18,25 @@ This project was generated with [Angular CLI] version 7.2.3.
 
 ## Screenshots
 
-![alt text](screenshots/screen1.png "Description goes here")
+![alt text](Screenshots/screen1.png "Search with autocomplete")
 
 
-![alt text](screenshots/screen2.png "Description goes here")
+![alt text](Screenshots/screen2.png "Search results for a movie")
 
 
-![alt text](screenshots/screen3.png "Description goes here")
+![alt text](Screenshots/screen3.png "Create a new list option in the 'add movie' menu")
+
+ 
+![alt text](Screenshots/screen4.png "Dialog box for creating a new list and optionally adding the selected movie to the list")
 
 
-![alt text](screenshots/screen4.png "Description goes here")
+![alt text](Screenshots/screen5.png "Add other movies to the new list")
 
-![alt text](screenshots/screen5.png "Description goes here")
 
-![alt text](screenshots/screen6.png "Description goes here")
+![alt text](Screenshots/screen6.png "Display movies stored in the new list lists")
+
+
+![alt text](Screenshots/screen7.png "Displays multiple lists")
 
 
 ## Future improvements
