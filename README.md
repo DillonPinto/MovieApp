@@ -4,21 +4,15 @@ This project is a movie database application. The application allows users to se
 This project was generated with [Angular CLI] version 7.2.3.
 
 
-# Functionality implemented
-*Login, register, and save user sessions without requiring the user to log back in again.
-
-*Ability to search for movies by title or IMDB id with autocomplete
-
-*Entity framework used to store user records/objects.
-
-*All UI components implemented using the Angular material package
+# Functionality implemented: 
   
-*Ability to create lists
-  
-*Ability to add a movie to list or remove one from a list
-
-*Pagination for all results displayed
-
+  * Login, register, and save user sessions without requiring the user to log back in again.
+  * Ability to search for movies by title or IMDB id with autocomplete
+  * Entity framework used to store user records/objects. 
+  * All UI components implemented using the Angular material package
+  * Ability to create lists
+  * Pagination for all results displaye
+  * Ability to add a movie to list or remove one from a list
 
 
 ## Future improvements
