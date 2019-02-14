@@ -18,20 +18,24 @@ This project was generated with [Angular CLI] version 7.2.3.
 
 ## Screenshots
 
+Search with autocomplete
+
 ![alt text](Screenshots/screen1.png "Search with autocomplete")
 
 
-
+Search results for a movie
 
 ![alt text](Screenshots/screen2.png "Search results for a movie")
 
 
 
 
+Create a new list option in the 'add movie' menu
+
 ![alt text](Screenshots/screen3.png "Create a new list option in the 'add movie' menu")
 
  
- 
+ Dialog box for creating a new list and optionally adding the selected movie to the list
  
 ![alt text](Screenshots/screen4.png "Dialog box for creating a new list and optionally adding the selected movie to the list")
 
